@@ -17,7 +17,7 @@ Get the latest zip from [Releases](https://github.com/kengcn/SubPilot-releases/r
   files work as is; for video files, add FFmpeg yourself.
 
 The release page lists the SHA-256 of each zip. To check a download in
-PowerShell: `Get-FileHash .\SubPilot-0.9.0-windows-x64-ffmpeg.zip`
+PowerShell: `Get-FileHash .\SubPilot-0.9.1-windows-x64-ffmpeg.zip`
 
 ## You need
 
