@@ -19,7 +19,7 @@ Get the latest zip from [Releases](https://github.com/kengcn/SubPilot-releases/r
   files work as is; for video files, add FFmpeg yourself.
 
 The release page lists the SHA-256 of each zip. To check a download in
-PowerShell: `Get-FileHash .\SubPilot-0.9.1-windows-x64-ffmpeg.zip`
+PowerShell: `Get-FileHash .\SubPilot-0.9.2-windows-x64-ffmpeg.zip`
 
 ## You need
 
@@ -56,6 +56,9 @@ interrupted task and how your API key is stored. Please read it first.
 - Subtitle text is sent to the AI provider you choose. Your API key is
   stored in the `data` folder next to `SubPilot.exe`; do not share or
   upload that folder.
+- When a task starts, SubPilot downloads its current model settings
+  from api.kengcn.net; nothing is sent with that request. If it fails,
+  the last saved or built-in settings are used.
 
 Known limitations of each version are in its release notes.
 
@@ -94,7 +97,7 @@ Windows 上的命令行（控制台）程序，界面为英文。
   使用；处理视频文件需要自行放入 FFmpeg。
 
 发布页列出了每个 zip 的 SHA-256。在 PowerShell 中核对下载文件：
-`Get-FileHash .\SubPilot-0.9.1-windows-x64-ffmpeg.zip`
+`Get-FileHash .\SubPilot-0.9.2-windows-x64-ffmpeg.zip`
 
 ### 使用前准备
 
@@ -125,6 +128,8 @@ API key 的保存方式，请先阅读。
 - 字幕文件中格式错误的条目会被跳过，其余照常翻译，结束时列出所在行号。
 - 字幕文本会发送给你选择的 AI 服务。API key 保存在 `SubPilot.exe` 旁边的
   `data` 文件夹中；不要分享或上传这个文件夹。
+- 每次开始任务时，SubPilot 会从 api.kengcn.net 下载当前的模型设置，这个请求
+  不发送任何内容；下载失败时使用上次保存的或内置的设置。
 
 各版本的已知限制见对应的发布说明。
 
